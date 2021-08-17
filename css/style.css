@@ -1,0 +1,39 @@
+/* Reset Basic*/
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:seagreen;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    background-color: salmon;
+}
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+        input {
+            border: 0;
+            text-align: end;
+            background-color: transparent;
+        }
+
+    .keyboard {
+        display: flex;
+        flex-direction: column;
+    }
+        row
+            number
+            sign_math

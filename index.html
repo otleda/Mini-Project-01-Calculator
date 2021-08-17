@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculator Basic com HTMl|CSS|JS</title>
 </head>
 <body>
-    <div class="container">
-        <input type="text">
-        <table class="Calculator">
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" placeholder="0" disabled>
+            <input type="text" placeholder="0" disabled>
+        </div>
+        <table class="keyboard">
+            <tr class="row">
+                <td onclick="calcMath()" class="number"> ac </td>
+                <td onclick="calcMath()" class="number"> % </td>
+                <td onclick="calcMath()" class="number"> c </td>
+                <td onclick="calcMath()" class="number sign_math"> / </td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="row">
+                <td onclick="calcMath()" class="number"> 7 </td>
+                <td onclick="calcMath()" class="number"> 8 </td>
+                <td onclick="calcMath()" class="number"> 9 </td>
+                <td onclick="calcMath()" class="number sign_math"> x </td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="row">
+                <td onclick="calcMath()" class="number"> 4 </td>
+                <td onclick="calcMath()" class="number"> 5 </td>
+                <td onclick="calcMath()" class="number"> 6 </td>
+                <td onclick="calcMath()" class="number sign_math"> - </td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="row">
+                <td onclick="calcMath()" class="number"> 1 </td>
+                <td onclick="calcMath()" class="number"> 2 </td>
+                <td onclick="calcMath()" class="number"> 3 </td>
+                <td onclick="calcMath()" class="number sign_math"> + </td>
+            </tr>
+            <tr class="row">
+                <td onclick="calcMath()" class="number"> 0 </td>
+                <td onclick="calcMath()" class="number"> , </td>
+                <td onclick="calcMath()" class="number">  </td>
+                <td onclick="execCalcMah()" class="equal number sign_math"> = </td>
             </tr>
         </table>
     </div>
 </body>
+<script src="script/script.js"></script>
 </html>
