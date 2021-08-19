@@ -17,23 +17,61 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: auto;
+    width: 320px;
+    height: 500px;
     background-color: salmon;
 }
+ 
     .display {
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
+        width: 100%;
+        height: 100px;
+        background-color: darkslategrey;
+
     }
         input {
             border: 0;
             text-align: end;
             background-color: transparent;
+            padding-right: 1em;
+            font-size: 1.2em;
         }
+        input:nth-child(2){
+            font-size: 1.5em;
+            padding-right: .7em;
 
+        }
     .keyboard {
+        background-color: blueviolet;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
-        row
-            number
-            sign_math
+        .row {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.5em;
+            width: 100%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+           
+        }
+            .number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+
+            .number.zero {
+                background-color: crimson;
+            }
+
+         

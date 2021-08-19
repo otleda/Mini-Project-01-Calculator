@@ -10,41 +10,40 @@
 <body>
     <div class="calculator">
         <div class="display">
-            <input type="text" placeholder="0" disabled>
-            <input type="text" placeholder="0" disabled>
+            <input type="text" placeholder="00000000000" disabled>
+            <input type="text" placeholder="0123456789" disabled>
         </div>
-        <table class="keyboard">
-            <tr class="row">
-                <td onclick="calcMath()" class="number"> ac </td>
-                <td onclick="calcMath()" class="number"> % </td>
-                <td onclick="calcMath()" class="number"> c </td>
-                <td onclick="calcMath()" class="number sign_math"> / </td>
-            </tr>
-            <tr class="row">
-                <td onclick="calcMath()" class="number"> 7 </td>
-                <td onclick="calcMath()" class="number"> 8 </td>
-                <td onclick="calcMath()" class="number"> 9 </td>
-                <td onclick="calcMath()" class="number sign_math"> x </td>
-            </tr>
-            <tr class="row">
-                <td onclick="calcMath()" class="number"> 4 </td>
-                <td onclick="calcMath()" class="number"> 5 </td>
-                <td onclick="calcMath()" class="number"> 6 </td>
-                <td onclick="calcMath()" class="number sign_math"> - </td>
-            </tr>
-            <tr class="row">
-                <td onclick="calcMath()" class="number"> 1 </td>
-                <td onclick="calcMath()" class="number"> 2 </td>
-                <td onclick="calcMath()" class="number"> 3 </td>
-                <td onclick="calcMath()" class="number sign_math"> + </td>
-            </tr>
-            <tr class="row">
-                <td onclick="calcMath()" class="number"> 0 </td>
-                <td onclick="calcMath()" class="number"> , </td>
-                <td onclick="calcMath()" class="number">  </td>
-                <td onclick="execCalcMah()" class="equal number sign_math"> = </td>
-            </tr>
-        </table>
+        <div class="keyboard">
+            <div class="row">
+                <div onclick="calcMath()" class="number"> ac </div>
+                <div onclick="calcMath()" class="number"> % </div>
+                <div onclick="calcMath()" class="number"> c </div>
+                <div onclick="calcMath()" class="number sign_math"> / </div>
+            </div>
+            <div class="row">
+                <div onclick="calcMath()" class="number"> 7 </div>
+                <div onclick="calcMath()" class="number"> 8 </div>
+                <div onclick="calcMath()" class="number"> 9 </div>
+                <div onclick="calcMath()" class="number sign_math"> x </div>
+            </div>
+            <div class="row">
+                <div onclick="calcMath()" class="number"> 4 </div>
+                <div onclick="calcMath()" class="number"> 5 </div>
+                <div onclick="calcMath()" class="number"> 6 </div>
+                <div onclick="calcMath()" class="number sign_math"> - </div>
+            </div>
+            <div class="row">
+                <div onclick="calcMath()" class="number"> 1 </div>
+                <div onclick="calcMath()" class="number"> 2 </div>
+                <div onclick="calcMath()" class="number"> 3 </div>
+                <div onclick="calcMath()" class="number sign_math"> + </div>
+            </div>
+            <div class="row">
+                <div onclick="calcMath()" class="number zero"> 0 </div>
+                <div onclick="calcMath()" class="number"> , </div>
+                <div onclick="execCalcMah()" class="equal number sign_math"> = </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script/script.js"></script>
