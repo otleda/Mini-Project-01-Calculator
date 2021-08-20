@@ -3,23 +3,33 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+:root {
+    --color-buttom-operation: #ff9500;
+    --color-base: #1c1c1c;
+    --color-secundary : #413e3e;
+    --color-tertuary : #e7e3e3;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color:seagreen;
 }
 
 .calculator {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 320px;
+    width: 300px;
     height: 500px;
-    background-color: salmon;
+    padding: 0 10px;
+    background-color: var(--color-base);
+    border-radius: 10px;
+    box-shadow: 1px 11px 17px 0px rgb(0 0 0 / 50%);
 }
  
     .display {
@@ -27,9 +37,9 @@ body {
         justify-content: space-evenly;
         flex-direction: column;
         width: 100%;
-        height: 100px;
-        background-color: darkslategrey;
-
+        height: 120px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
         input {
             border: 0;
@@ -39,26 +49,30 @@ body {
             font-size: 1.2em;
         }
         input:nth-child(2){
-            font-size: 1.5em;
-            padding-right: .7em;
-
+            font-size: 2em;
+            padding-right: .5em;
         }
+
     .keyboard {
-        background-color: blueviolet;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
         height: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
     }
         .row {
             display: flex;
             justify-content: space-around;
             font-size: 1.5em;
             width: 100%;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-transform: uppercase;
-           
+        }
+        .row_line > .number:nth-child(-n + 3) {
+            background: var(--color-tertuary);
+            color: var(--color-secundary);
         }
             .number {
                 display: flex;
@@ -66,12 +80,21 @@ body {
                 align-items: center;
                 width: 60px;
                 height: 60px;
-                border: 1px solid black;
                 border-radius: 50%;
+                border: 1px solid transparent;
+                color: var(--color-tertuary);
+                background: var(--color-secundary);
+            }
+            
+            .simbol_math {
+                background: var(--color-buttom-operation);
             }
 
             .number.zero {
-                background-color: crimson;
-            }
+                width: 106px;
+                border-radius: 30px;
+                justify-content: flex-start;
+                padding-left: 1.1em;
+                }
 
          

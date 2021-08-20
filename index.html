@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Calculator Basic com HTMl|CSS|JS</title>
 </head>
@@ -14,34 +20,34 @@
             <input type="text" placeholder="0123456789" disabled>
         </div>
         <div class="keyboard">
-            <div class="row">
+            <div class="row row_line">
                 <div onclick="calcMath()" class="number"> ac </div>
                 <div onclick="calcMath()" class="number"> % </div>
                 <div onclick="calcMath()" class="number"> c </div>
-                <div onclick="calcMath()" class="number sign_math"> / </div>
+                <div onclick="calcMath()" class="number simbol_math"> &divide; </div>
             </div>
             <div class="row">
                 <div onclick="calcMath()" class="number"> 7 </div>
                 <div onclick="calcMath()" class="number"> 8 </div>
                 <div onclick="calcMath()" class="number"> 9 </div>
-                <div onclick="calcMath()" class="number sign_math"> x </div>
+                <div onclick="calcMath()" class="number simbol_math"> x </div>
             </div>
             <div class="row">
                 <div onclick="calcMath()" class="number"> 4 </div>
                 <div onclick="calcMath()" class="number"> 5 </div>
                 <div onclick="calcMath()" class="number"> 6 </div>
-                <div onclick="calcMath()" class="number sign_math"> - </div>
+                <div onclick="calcMath()" class="number simbol_math"> - </div>
             </div>
             <div class="row">
                 <div onclick="calcMath()" class="number"> 1 </div>
                 <div onclick="calcMath()" class="number"> 2 </div>
                 <div onclick="calcMath()" class="number"> 3 </div>
-                <div onclick="calcMath()" class="number sign_math"> + </div>
+                <div onclick="calcMath()" class="number simbol_math"> + </div>
             </div>
             <div class="row">
                 <div onclick="calcMath()" class="number zero"> 0 </div>
                 <div onclick="calcMath()" class="number"> , </div>
-                <div onclick="execCalcMah()" class="equal number sign_math"> = </div>
+                <div onclick="execCalcMah()" class="equal number simbol_math"> = </div>
             </div>
         </div>
     </div>
