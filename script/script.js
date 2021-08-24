@@ -6,6 +6,11 @@ const resultToDisplay = document.querySelector('#resultToDisplay');
 function calcMath(value) {
     operation += value;
     calcOperation.value = operation;
+
+    if(operation == "%") {
+        operation / 100 * value
+        console.log(operation)
+    }
 } 
 
 function execCalcMah() {
@@ -21,7 +26,7 @@ function execCalcMah() {
 } 
 
 function cleanNumber() {
-    operation == operation.substring(0, operation.length - 1);
+    operation = operation.substring(0, operation.length - 1);
     calcOperation.value = operation;
 }
 
