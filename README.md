@@ -5,4 +5,4 @@ Mini Projeto com &nbsp; **HTML | CSS | JS** &nbsp;, construindo uma calculadora 
 
 ![calculator](./img/calc.png)
 
-(clik-me ! Calculator)[https://otleda.github.io/Mini-Project-01-Calculator/]
+[Click-me aqui Calculator](https://otleda.github.io/Mini-Project-01-Calculator/)
